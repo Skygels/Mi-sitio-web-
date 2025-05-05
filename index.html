@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias Dulces - Repostería Artesanal</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Enlace a la hoja de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Delicias Dulces</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Menu items -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#catalogo">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recetas">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container text-center">
+      <h1 class="display-4">Bienvenido a Delicias Dulces</h1>
+      <p class="lead">La mejor repostería artesanal en tu ciudad</p>
+      <a href="#catalogo" class="btn btn-custom btn-lg">Ver Catálogo</a>
+    </div>
+  </header>
+
+  <!-- Catálogo Section -->
+  <section id="catalogo" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Nuestro Catálogo</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/R.7ea187ad7af6ea85f0aa4ea324f14050?rik=XCwIrDYrgRMyDw&pid=ImgRaw&r=0/350x250" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Chocolate</h5>
+              <p class="card-text">Delicioso pastel de chocolate con cobertura de ganache.</p>
+              <button class="btn btn-custom" onclick="mostrarDetalle('pastelChocolate')">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/R.0a1565159c6b12f99f5ca4f5f19cc7ac?rik=0JEbNOp%2f0oy%2bqQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-eVPWpVxvo1A%2fVfWeeKyke9I%2fAAAAAAAAmzw%2fSmLdgCsBu2Q%2fs1600%2fyogur.jpg&ehk=5IaHo9cnJQNTbtptdxqIeDjDkmj%2bBuTNnyTdJC9PuJc%3d&risl=&pid=ImgRaw&r=0/350x250" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Cupcakes Vainilla</h5>
+              <p class="card-text">Esponjosos cupcakes de vainilla con frosting de fresa.</p>
+              <button class="btn btn-custom" onclick="mostrarDetalle('cupcakesVainilla')">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.3ryT6i8vvdFIQEjsFRiL-AHaHa?rs=1&pid=ImgDetMain/350x250"class="card-img-top" alt="Producto 3">
+            <div class="card-body">
+              <h5 class="card-title">Galletas Decoradas</h5>
+              <p class="card-text">Galletas artesanales decoradas a mano para toda ocasión.</p>
+              <button class="btn btn-custom" onclick="mostrarDetalle('galletasDecoradas')">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recetas Section -->
+  <section id="recetas" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Recetas Populares</h2>
+      <div class="row">
+        <!-- Receta 1 -->
+        <div class="col-md-6 mb-4">
+          <h3>Receta de Brownies</h3>
+          <p>Aprende a hacer los brownies más deliciosos y esponjosos siguiendo nuestra receta paso a paso.</p>
+          <button class="btn btn-custom" onclick="mostrarReceta('brownies')">Ver Receta</button>
+        </div>
+        <!-- Receta 2 -->
+        <div class="col-md-6 mb-4">
+          <h3>Receta de Tarta de Queso</h3>
+          <p>Descubre cómo preparar una tarta de queso cremosa y suave que encantará a todos.</p>
+          <button class="btn btn-custom" onclick="mostrarReceta('tartaQueso')">Ver Receta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Detalle Producto -->
+  <div class="modal fade" id="modalDetalle" tabindex="-1" aria-labelledby="modalDetalleLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDetalleLabel">Detalle del Producto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="contenidoDetalle">
+          <!-- Contenido dinámico cargado por JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Receta -->
+  <div class="modal fade" id="modalReceta" tabindex="-1" aria-labelledby="modalRecetaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRecetaLabel">Receta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="contenidoReceta">
+          <!-- Contenido dinámico cargado por JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Contacto</h2>
+      <p class="text-center">¿Quieres hacer un pedido o tienes alguna pregunta? <a href="https://krs.microsoft.com/redirect?id=P5Ie3-7G">Envíanos un correo</a> o síguenos en nuestras redes sociales.</p>
+      <!-- Botones de redes sociales -->
+      <div class="text-center">
+        <a href="#" class="btn btn-social-icon btn-facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Delicias Dulces.</p>
+  </footer>
+
+  <!-- Enlaces a JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/angelesmurana@gmail.com/angelesmurana@gmail.com/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Enlace a FontAwesome para iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</ul>
+  <!-- Enlace al archivo JavaScript personalizado -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

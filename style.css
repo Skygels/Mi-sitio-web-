@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar {
+  background-color: #fd79a8;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('https://th.bing.com/th/id/R.cbdbc66c4eca4a6064ab7f1e33ee507b?rik=7Sa7pTaGb%2bmVDQ&riu=http%3a%2f%2fwww.viajanteforadacurva.com%2fwp-content%2fuploads%2f2018%2f05%2fDSC01110-1024x683.jpg&ehk=N2fxMGve8q0sstsmViByZJnb7nJ%2f9wFyLZcZ9tHgaWw%3d&risl=&pid=ImgRaw&r=0/1500x500');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Pacifico', cursive;
+  color: #e84393;
+  margin-bottom: 2rem;
+}
+
+.btn-custom {
+  background-color: #fd79a8;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e84393;
+}
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.btn-social-icon {
+  font-size: 1.5rem;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  border-radius: 50%;
+  background-color: #fd79a8;
+  margin: 0 5px;
+}
+
+.btn-social-icon:hover {
+  background-color: #e84393;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.btn-instagram {
+  background-color: #e4405f;
+}
+
+.btn-instagram:hover {
+  background-color: #c13584;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 100px 0;
+  }
+}
